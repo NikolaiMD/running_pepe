@@ -1,22 +1,24 @@
 body{
   background-color: #333;
+  overflow: hidden;
 }
 #pepe{
-  position: absolute;
-  top: 40%;
   background-image: url(https://img00.deviantart.net/0d8e/i/2016/075/1/b/running_pepe_the_frog_by_codata-d9vahmg.png);
   background-position: left top;
   width: 163px;
   height: 226px;
   animation: pepe 1s steps(6) infinite,
              moving 12s linear infinite;
-
 }
 @keyframes pepe{
-  0%{background-position: 0px;}
-  100%{background-position: 1024px;}
+  0%{background-position: 1024px;}
+  100%{background-position:  0px;}
 }
 @keyframes moving{
   0%{transform: translateX(-163px);}
   100%{transform: translateX(1400px);}
+}
+#road{
+  border-top: 3px dotted green;
+  margin-top: -28px;
 }
